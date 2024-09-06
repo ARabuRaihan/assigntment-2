@@ -37,8 +37,9 @@
     font-weight: 600px;
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 1);
-    ;
+    
    }
+  
 
 /* header style */
 header{
@@ -84,7 +85,7 @@ padding: 15px 20px;
 /* stay healthy style */
 .stay-healthy-container{
   display: flex;
-  gap: 147px;
+  gap: 16rem;
 }
 .stay-healthy-text{
   display: grid;
@@ -96,22 +97,19 @@ padding: 15px 20px;
   color: white;
   margin: 0 auto;
 }
-.stay-healthy-heading>span{
-  
-}
 .stay-healthy-btn1{
   background: rgba(230, 83, 60, 1);
-  width: 224px;
+  max-width: 224px;
   height: 55px;
   border-radius: 43px;
   color: white;
 }
 .stay-healthy-btn-container{
   display: flex;
-  gap: 20px;
+  gap: 1.2rem;
 }
 .stay-healthy-btn2{
-  width: 224px;
+  max-width: 224px;
   height: 55px;
   border: 1px solid rgba(255, 255, 255, 1);
   border-radius: 42px;
@@ -129,8 +127,16 @@ padding: 15px 20px;
   font-size: 1.5rem;
   color: white;
 }
+.stay-health-badge1-container{
+margin-top: -140px;
+}
 .stay-health-badge1{
   background-color: rgba(48, 48, 48, 0.54);
+  
+}
+.stay-health-badge2-container{
+  margin-top: -30rem;
+  margin-left:10.6rem;
 }
 .stay-health-badge2{
   background-color: rgba(255, 255, 255, 0.1);
@@ -140,6 +146,7 @@ padding: 15px 20px;
 /* habits styles */
 .habit-container{
 text-align: center;
+margin: 0;
 }
 /* habits-card-styles */
 .habits-card-container{
@@ -147,6 +154,9 @@ text-align: center;
   gap: 40px;
   margin-top: 58px;
   
+}
+.card-container{
+  display: flex;
 }
 .habit-card-img{
 
@@ -224,9 +234,17 @@ td{
 .calculator-bmi{
   margin-right: 189px;
 }
+.bmi-table-title{
+  text-align: center;
+}
+table{
+  max-width:310px ;
+  height:116px ;
+  margin:0px 90px 0px 70px;
 
+}
 input{
-  width: 282px;
+  max-width: 282px;
   height:48px ;
   background: rgba(255, 255, 255, 0.1);
   gap: 12px;
@@ -235,13 +253,117 @@ input{
 
 }
 .third-input{
-  width: 577px;
+  max-width: 577px;
 }
-.calculate-btn{
+.Calculate-btn{
   background: rgba(230, 83, 60, 1);
   border-radius: 43px;
   color: white;
   padding: 16px 70px;
 }
 
+
+
+/* footer style */
+footer{
+  max-width: 1440px;
+  background: rgba(255, 255, 255, 0.1);
+
+}
+.fitness{
+  display: flex;
+  margin-top: 88px;
+
+}
+.fitness-container{
+  margin: 66px 190px 80px 190px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.fitness-title{
+  font-weight:800px ;
+  font-size: 4.4rem;
+  color:rgba(230, 83, 60, 1);
+  font-style: italic;
+  margin: 0;
+
+}
+.Get-Started h3{
+  font-weight: 700px;
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+} 
+.Get-Started>ul li{
+font-weight: 400px;
+font-size: 1.2rem;
+text-decoration: none;
+color:rgba(255, 255, 255, 0.5);
+;
+}
+.Get-Started ul{
+  list-style: none;
+}
+.horizontal-line{
+  /* position: relative; */
+  max-width: 900px;
+  border: 2px solid rgba(255, 255, 255, 0.1)
+  
+}
+.right-deta{
+  text-align: center;
+
+} 
+ 
+/* smart phone responsive */
+ @media screen and (max-width:576px){
+  .stay-healthy-container{
+    display: grid;
+  }
+  .stay-health-badge2-container{
+    margin-top: -70px;
+  
+  }
+  .left-margin{
+    margin:0px;
+  }
+  .main-habit-container{
+    display: grid;
+    justify-content: center;
+    margin-right:0px;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .main-habit-container .habit-card{
+    margin-left: 90px;
+  }
+  .run-main-container{
+    margin: 0px;
+    display: grid;
+  }
+  .run-main-container{
+    margin: 0px;
+    display: grid;
+  }
+  .bmi-box-contain{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .calculator-bmi{
+    margin: 0px;
+  }
+  .fitness-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .right-deta{
+    text-align: start;
+  }
+  .horizontal-line{
+    text-align: start;
+  }
+} 
 
